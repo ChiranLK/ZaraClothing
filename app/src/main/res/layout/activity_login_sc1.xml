@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginSC1" >
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="921dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Zara Clothing"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:translationY="90dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login to Account"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:translationX="120sp"
+            android:translationY="175dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:translationY="220dp"
+            app:srcCompat="@drawable/blurlogo" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="389dp"
+            android:layout_height="wrap_content"
+            android:text="Enter Your Username"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:translationX="12dp"
+            android:translationY="-120dp" />
+
+        <EditText
+            android:id="@+id/loginSCUserName"
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="username@gmail.com"
+            android:inputType="textEmailAddress"
+            android:textSize="20sp"
+            android:translationX="12dp"
+            android:translationY="-118dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="392dp"
+            android:layout_height="wrap_content"
+            android:text="Enter Your Password"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:translationX="12dp"
+            android:translationY="-95dp" />
+
+        <EditText
+            android:id="@+id/loginSCPassword"
+            android:layout_width="392dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="************"
+            android:inputType="textPassword"
+            android:textSize="20sp"
+            android:translationX="12dp"
+            android:translationY="-95dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Need to Register "
+            android:translationY="100dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#3346B6"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/loginSCsignup"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/black"
+            android:text="Sign Up"
+            android:translationX="150dp"
+            android:translationY="120dp" />
+
+        <Button
+            android:id="@+id/loginSCsignin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:backgroundTint="@color/black"
+            android:translationY="-140dp"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

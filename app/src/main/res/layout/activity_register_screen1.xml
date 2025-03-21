@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterScreen1">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="921dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Zara Clothing"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:translationY="90dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create an Account"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:translationX="120sp"
+            android:textStyle="bold"
+            android:translationY="175dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:translationY="250dp"
+            app:srcCompat="@drawable/blurlogo" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:text="First Name "
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:translationX="12dp"
+            android:translationY="-120dp"
+            android:background="@drawable/edit_text_bg"/>
+
+        <EditText
+            android:id="@+id/registerSCfname"
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:translationX="12dp"
+            android:translationY="-110dp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="388dp"
+            android:layout_height="wrap_content"
+            android:text="Last Name"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:translationX="12dp"
+            android:translationY="-90dp"
+            android:background="@drawable/edit_text_bg"/>/>
+
+        <EditText
+            android:id="@+id/registerSClname"
+            android:layout_width="388dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:translationX="12dp"
+            android:translationY="-80dp" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="388dp"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:translationX="12dp"
+            android:background="@drawable/edit_text_bg"
+            android:translationY="-65dp" />
+
+        <EditText
+            android:id="@+id/registerSCemail"
+            android:layout_width="384dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:translationX="12dp"
+            android:translationY="-55dp" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="383dp"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:translationX="12dp"
+            android:translationY="-45dp"
+            android:background="@drawable/edit_text_bg"/>
+
+        <EditText
+            android:id="@+id/registerSCpassword"
+            android:layout_width="383dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:translationX="12dp"
+            android:translationY="-35dp" />
+
+
+        <Button
+            android:id="@+id/registerSCsubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit &amp; Login"
+            android:backgroundTint="@color/black"
+            android:translationY="26dp"/>
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="I Agree with terms and conditions."
+            android:translationY="-86dp"/>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
