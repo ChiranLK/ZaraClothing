@@ -16,4 +16,12 @@
     <string name="im2">MENS</string>
     <string name="im3">NEW ARRVIALS</string>
     <string name="tshirtimage">T-Shirts</string>
+    <string name="OversizeT">Over Size</string>
+    <string name="selectsizetext">Select your size</string>
+    <string name="sizeRadioGroup">Radio Group</string>
+    <string name="sizeSmall">S</string>
+    <string name="sizeMedium">M</string>
+    <string name="sizeLarge">L</string>
+    <string name="sizeXL">XL</string>
+    <string name="Proceedtopay">Proceed to Pay</string>
 </resources>

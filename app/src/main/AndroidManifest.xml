@@ -13,29 +13,32 @@
         android:theme="@style/Theme.ZaraClothing"
         tools:targetApi="31">
         <activity
-            android:name=".TshirtSection"
+            android:name=".paymentMethodSC1"
             android:exported="false" />
+        <activity
+            android:name=".checkoutScreen1"
+            android:exported="true" />
+        <activity
+            android:name=".TshirtSection"
+            android:exported="true" />
         <activity
             android:name=".MensSection"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".homeScreen1"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".RegisterScreen1"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".LoginSC1"
-            android:exported="false" />
-        <activity
-            android:name=".loginScreen1"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".OnBoardScreen2"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".OnBoardScreen1"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

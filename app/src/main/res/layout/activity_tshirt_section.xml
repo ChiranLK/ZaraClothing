@@ -30,60 +30,73 @@
             app:layout_constraintVertical_bias="0.02"
             app:srcCompat="@drawable/tshirtheader" />
 
-        <ImageView
-            android:id="@+id/imageView7"
-            android:layout_width="173dp"
-            android:layout_height="273dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/imageView8"
-            app:layout_constraintHorizontal_bias="0.604"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView2"
-            app:layout_constraintVertical_bias="0.088"
-            app:srcCompat="@drawable/crewneck" />
-
-        <ImageView
-            android:id="@+id/imageView8"
-            android:layout_width="171dp"
-            android:layout_height="263dp"
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="760dp"
+            android:padding="16dp"
+            android:translationY="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/imageView7"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView2"
-            app:layout_constraintVertical_bias="0.088"
-            app:srcCompat="@drawable/denimt" />
+            app:layout_constraintVertical_bias="0.5"
+            tools:ignore="SpeakableTextPresentCheck">
 
-        <ImageView
-            android:id="@+id/imageView9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/longsleev"
-            tools:layout_editor_absoluteX="22dp"
-            tools:layout_editor_absoluteY="448dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/imageView10"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/oversize"
-            tools:layout_editor_absoluteX="218dp"
-            tools:layout_editor_absoluteY="448dp" />
 
-        <ImageView
-            android:id="@+id/imageView11"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/polos"
-            tools:layout_editor_absoluteX="30dp"
-            tools:layout_editor_absoluteY="719dp" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/crewneck"
+                    android:translationX="-95dp" />
 
-        <ImageView
-            android:id="@+id/imageView12"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/sleeveless"
-            tools:layout_editor_absoluteX="225dp"
-            tools:layout_editor_absoluteY="719dp" />
+                <ImageView
+                    android:id="@+id/OversizeT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/oversize"
+                    android:translationX="95dp"
+                    android:translationY="-255dp" />
+
+
+                <ImageView
+                    android:layout_width="170dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/denimt"
+                    android:translationX="-90dp"
+                    android:translationY="-250dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/polos"
+                    android:translationX="92dp"
+                    android:translationY="-500dp" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/longsleev"
+                    android:translationX="-90dp"
+                    android:translationY="-490dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/sleeveless"
+                    android:translationX="92dp"
+                    android:translationY="-740dp" />
+            </LinearLayout> <!-- END of parent LinearLayout -->
+
+        </ScrollView>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
