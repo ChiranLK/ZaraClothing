@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegisterScreen1">
+    tools:context=".RegisterScreen1"
+    android:background="@drawable/backgroundimg">
 
     <LinearLayout
         android:layout_width="409dp"
@@ -24,8 +25,10 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="Zara Clothing"
-            android:textSize="30sp"
+            android:textSize="40sp"
             android:textStyle="bold"
+            android:fontFamily="serif"
+            android:textColor="@color/black"
             android:translationY="90dp" />
 
         <TextView

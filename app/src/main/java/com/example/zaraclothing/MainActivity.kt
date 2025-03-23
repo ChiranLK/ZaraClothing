@@ -2,6 +2,8 @@ package com.example.zaraclothing
 
 import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.provider.Telephony.Mms.Intents
 import android.view.animation.AlphaAnimation
 import android.widget.Button
@@ -21,11 +23,10 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        val mainbtn : Button = findViewById(R.id.mainbtn)
-
-        mainbtn.setOnClickListener{
-            val intent = Intent(this,OnBoardScreen1::class.java)
+        Handler(Looper.getMainLooper()).postDelayed({
+            val intent = Intent(this, OnBoardScreen1::class.java)
             startActivity(intent)
-        }
+            finish() // Finish the current activity so it doesn't stay in the back stack
+        }, 5000)
     }
 }

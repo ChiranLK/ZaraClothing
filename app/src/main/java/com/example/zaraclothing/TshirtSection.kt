@@ -1,5 +1,6 @@
 package com.example.zaraclothing
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
@@ -9,6 +10,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class TshirtSection : AppCompatActivity() {
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -23,6 +25,12 @@ class TshirtSection : AppCompatActivity() {
 
         OversizeT.setOnClickListener {
             val intent = Intent(this, checkoutScreen1::class.java)
+            startActivity(intent)
+        }
+        val previousImg: ImageView = findViewById(R.id.previousImg)
+
+        previousImg.setOnClickListener {
+            val intent = Intent(this, MensSection::class.java)
             startActivity(intent)
         }
     }

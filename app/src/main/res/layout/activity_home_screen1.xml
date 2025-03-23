@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".homeScreen1">
+    tools:context=".homeScreen1"
+    android:background="@drawable/backgroundimg">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="409dp"
@@ -23,7 +24,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="YOUR  DAILY FASHION PARTNER"
-            android:textColor="#FBA809"
+            android:textColor="#0B0B0B"
             android:textSize="22sp"
             android:textStyle="italic"
             app:layout_constraintBottom_toTopOf="@+id/viewPager"
@@ -50,7 +51,7 @@
             android:fontFamily="serif"
             android:text="Zara Clothing"
             android:textColor="#000000"
-            android:textSize="33sp"
+            android:textSize="40sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/viewPager"
             app:layout_constraintEnd_toEndOf="parent"
@@ -58,6 +59,16 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.284" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/navibar"
+            android:layout_width="437dp"
+            android:layout_height="70dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewPager"
+            app:layout_constraintVertical_bias="0.995"
+            app:menu="@menu/navigationbar"
+            tools:layout_editor_absoluteX="-25dp" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CardPayment"
+    android:background="@drawable/backgroundimg">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="921dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:translationY="89dp"
+            app:srcCompat="@drawable/creditdebitcard" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:translationY="110dp"
+            android:textStyle="bold"
+            android:textSize="19dp"
+            android:gravity="center"
+            android:text="Select Your Card Type" />
+
+        <RadioGroup
+            android:id="@+id/paymentRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:translationX="4dp"
+            android:translationY="175dp">
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="145dp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageView3"
+                app:layout_constraintHorizontal_bias="0.491"
+                app:layout_constraintStart_toEndOf="@+id/cpFormBg"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.339" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.617"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.34" />
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:translationX="-200dp"
+                app:srcCompat="@drawable/visa" />
+
+            <ImageView
+                android:id="@+id/imageView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:translationX="-100dp"
+                app:srcCompat="@drawable/master" />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/CardNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:translationY="270dp"
+            android:inputType="text"
+            android:textColorHint="@color/black"
+            android:textStyle="bold"
+            android:hint="Card Number"
+            android:background="@drawable/edit_text_bg"/>
+
+        <EditText
+            android:id="@+id/CardYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:translationY="290dp"
+            android:inputType="text"
+            android:textStyle="bold"
+            android:textColorHint="@color/black"
+            android:hint="Expire Year/Month"
+            android:background="@drawable/edit_text_bg"/>
+
+        <EditText
+            android:id="@+id/CardSecurity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:translationY="320dp"
+            android:textStyle="bold"
+            android:hint="Security Code"
+            android:textColorHint="@color/black"
+            android:background="@drawable/edit_text_bg"/>
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:translationY="350dp"
+            android:textSize="19dp"
+            android:text="Agree with Terms and Conditions" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:translationY="390dp"
+            android:textStyle="bold"
+            android:textSize="19dp"
+            android:gravity="center"
+            android:text="Total Cost" />
+
+        <Button
+            android:id="@+id/paymentbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:translationY="490dp"
+            android:backgroundTint="@color/black"
+            android:text="Pay Now" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:translationY="10dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="19dp"
+            android:text="Card Details" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:translationY="345dp"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:text="$70.00" />
+
+        <ImageView
+            android:id="@+id/previousImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:translationY="-345dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.026"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.787"
+            app:srcCompat="@drawable/previous" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

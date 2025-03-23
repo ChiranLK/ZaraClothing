@@ -23,5 +23,14 @@
     <string name="sizeMedium">M</string>
     <string name="sizeLarge">L</string>
     <string name="sizeXL">XL</string>
-    <string name="Proceedtopay">Proceed to Pay</string>
+    <string name="Addtocart">Add to Cart</string>
+    <string name="Cardpayment">Card Payment</string>
+    <string name="proceedtopay">Proceed to Pay</string>
+    <string name="CardSecurity">Security Code</string>
+    <string name="CardYear">Expire Year/Month</string>
+    <string name="CardNumber">Card Number</string>
+    <string name="paymentbutton">Pay Now</string>
+    <string name="navibar">Navigation Bar</string>
+    <string name="previousImg">Previous</string>
+
 </resources>

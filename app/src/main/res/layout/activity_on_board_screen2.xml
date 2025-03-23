@@ -33,19 +33,5 @@
             android:textStyle="bold"
             android:translationY="278dp" />
 
-        <Button
-            android:id="@+id/os2btn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@android:color/transparent"
-            android:drawablePadding="8dp"
-            android:gravity="center"
-            android:text="Continue"
-            android:textColor="#020000"
-            android:textSize="28sp"
-            android:shadowColor="@color/black"
-            android:translationX="0dp"
-            android:translationY="690dp" />
-
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

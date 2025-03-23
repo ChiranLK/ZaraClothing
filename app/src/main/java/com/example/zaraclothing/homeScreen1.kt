@@ -1,6 +1,7 @@
 package com.example.zaraclothing
 
 import SliderAdapter
+import android.accounts.Account
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
@@ -9,6 +10,7 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager2.widget.ViewPager2
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class homeScreen1 : AppCompatActivity() {
     private lateinit var viewPager: ViewPager2
@@ -19,6 +21,7 @@ class homeScreen1 : AppCompatActivity() {
         R.drawable.banner2
 
     )
+
 
     private val handler = Handler(Looper.getMainLooper())
     private val autoScrollRunnable = object : Runnable {
@@ -44,6 +47,26 @@ class homeScreen1 : AppCompatActivity() {
         {
             val intent = Intent(this, MensSection::class.java)
             startActivity(intent)
+        }
+        val navibar : BottomNavigationView = findViewById(R.id.navibar)
+
+        navibar.setOnItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.npoints -> {
+                    startActivity(Intent(this, LoyaltyPoints::class.java))
+                    true
+                }
+                R.id.nuser -> {
+                    startActivity(Intent(this,UserProfile::class.java))
+                    true
+                }
+                R.id.nCart -> {
+                    startActivity(Intent(this,Cart::class.java))
+                    true
+                }
+                R.id.nhome->true
+                else -> false
+            }
         }
     }
 

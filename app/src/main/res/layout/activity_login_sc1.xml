@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginSC1" >
+    tools:context=".LoginSC1"
+    android:background="@drawable/backgroundimg">
 
     <LinearLayout
         android:layout_width="409dp"
@@ -24,8 +25,9 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="Zara Clothing"
-            android:textSize="30sp"
+            android:textSize="40sp"
             android:textStyle="bold"
+            android:fontFamily="serif"
             android:translationY="90dp" />
 
         <TextView
@@ -36,6 +38,7 @@
             android:gravity="center"
             android:textColor="@color/black"
             android:textSize="22sp"
+            android:textStyle="bold"
             android:translationX="120sp"
             android:translationY="175dp" />
 
@@ -54,7 +57,8 @@
             android:textSize="20sp"
             android:textStyle="bold"
             android:translationX="12dp"
-            android:translationY="-120dp" />
+            android:translationY="-120dp"
+            android:background="@drawable/edit_text_bg"/>
 
         <EditText
             android:id="@+id/loginSCUserName"
@@ -65,7 +69,8 @@
             android:inputType="textEmailAddress"
             android:textSize="20sp"
             android:translationX="12dp"
-            android:translationY="-118dp" />
+            android:translationY="-118dp"
+            />
 
         <TextView
             android:id="@+id/textView4"
@@ -75,7 +80,8 @@
             android:textSize="20sp"
             android:textStyle="bold"
             android:translationX="12dp"
-            android:translationY="-95dp" />
+            android:translationY="-95dp"
+            android:background="@drawable/edit_text_bg"/>
 
         <EditText
             android:id="@+id/loginSCPassword"
@@ -86,7 +92,8 @@
             android:inputType="textPassword"
             android:textSize="20sp"
             android:translationX="12dp"
-            android:translationY="-95dp" />
+            android:translationY="-95dp"
+            />
 
         <TextView
             android:id="@+id/textView5"

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShippingInformation"
+    android:background="@drawable/backgroundimg">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="921dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:translationY="80dp"
+            app:srcCompat="@drawable/shippinginformation" />
+
+        <EditText
+            android:id="@+id/editTextText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textSize="24dp"
+            android:translationY="180dp"
+            android:inputType="text"
+            android:hint="Enter Full Name"
+            android:textColorHint="@color/black"
+            android:background="@drawable/edit_text_bg"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:translationY="150dp"
+            app:srcCompat="@drawable/blurlogo" />
+
+        <EditText
+            android:id="@+id/editTextText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textSize="24dp"
+            android:inputType="text"
+            android:translationY="-160dp"
+            android:hint="Adress"
+            android:textColorHint="@color/black"
+            android:background="@drawable/edit_text_bg"/>
+
+        <EditText
+            android:id="@+id/editTextText3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:translationY="-120dp"
+            android:textSize="24dp"
+            android:hint="District"
+            android:textColorHint="@color/black"
+            android:background="@drawable/edit_text_bg"/>
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textSize="24dp"
+            android:hint="Enter Your Contact Number"
+            android:translationY="-60dp"
+            android:textColorHint="@color/black"
+            android:inputType="phone"
+            android:background="@drawable/edit_text_bg"/>
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textSize="24dp"
+            android:translationY="-10dp"
+            android:hint="Enter Your Email"
+            android:textColorHint="@color/black"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/edit_text_bg"/>
+
+        <Button
+            android:id="@+id/shippingbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:translationY="150dp"
+            android:textSize="25dp"
+            android:backgroundTint="@color/black"
+            android:text="Confirm Order" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

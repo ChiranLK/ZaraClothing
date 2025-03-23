@@ -2,6 +2,8 @@ package com.example.zaraclothing
 
 import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -18,13 +20,11 @@ class OnBoardScreen2 : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val os2btn: Button = findViewById(R.id.os2btn)
-
-        os2btn.setOnClickListener {
+        Handler(Looper.getMainLooper()).postDelayed({
             val intent = Intent(this, LoginSC1::class.java)
-            startActivity(intent)// need to change
-
-        }
+            startActivity(intent)
+            finish() // Finish the current activity so it doesn't stay in the back stack
+        }, 5000)
     }
-
 }
+

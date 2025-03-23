@@ -24,5 +24,11 @@ class LoginSC1 : AppCompatActivity() {
             val intent = Intent(this, RegisterScreen1::class.java)
             startActivity(intent)
         }
+        val loginSCsignin: Button = findViewById(R.id.loginSCsignin)
+
+        loginSCsignin.setOnClickListener {
+            val intent = Intent(this, homeScreen1::class.java)
+            startActivity(intent)
+        }
     }
 }

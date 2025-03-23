@@ -5,98 +5,100 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/backgroundimg"
     tools:context=".checkoutScreen1">
 
     <!-- Checkout Image -->
+
+    <!-- Product Description -->
+
+    <!-- Product Image -->
+
+    <!-- Product Name -->
+
+    <!-- Product Price -->
+
+    <!-- LinearLayout for Size and Quantity Selection -->
+
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="362dp"
         android:layout_height="39dp"
+        android:layout_marginTop="16dp"
         android:src="@drawable/checkout"
-        android:translationY="75dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView15"
+        android:translationY="65dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Product Description -->
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Product Description"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:layout_marginTop="16dp"
-        app:layout_constraintTop_toBottomOf="@+id/imageView7"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <!-- Product Image -->
     <ImageView
         android:id="@+id/imageView8"
         android:layout_width="169dp"
         android:layout_height="260dp"
         android:src="@drawable/mencheckout"
-        android:layout_marginTop="16dp"
-        app:layout_constraintTop_toBottomOf="@id/textView15"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.194" />
 
-    <!-- Product Name -->
     <TextView
         android:id="@id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:text="Over Size Tee"
         android:textSize="20sp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
 
-    <!-- Product Price -->
     <TextView
         android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:text="Price : $35.00"
         android:textSize="20sp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
-    <!-- LinearLayout for Size and Quantity Selection -->
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:orientation="vertical"
-        android:layout_marginTop="16dp"
-        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/textView14">
 
         <!-- Select Size Label -->
         <TextView
             android:id="@+id/selectsizetext"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
             android:text="Select your Size"
             android:textSize="20sp"
-            android:textStyle="bold"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="16dp" />
+            android:textStyle="bold" />
 
         <!-- Size Selection RadioGroup -->
         <RadioGroup
             android:id="@+id/sizeRadioGroup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="8dp">
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
 
             <RadioButton
                 android:id="@+id/sizeSmall"
@@ -128,25 +130,40 @@
             android:id="@+id/quantityLabel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
             android:text="Quantity:"
             android:textSize="20sp"
-            android:textStyle="bold"
-            android:layout_marginTop="20dp"
-            android:layout_marginStart="20dp" />
+            android:textStyle="bold" />
 
         <NumberPicker
             android:id="@+id/quantityPicker"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"/>
+            android:layout_width="190dp"
+            android:layout_height="89dp"
+            android:layout_marginStart="20dp"
+            android:background="@color/white"
+            android:scrollbarSize="25dp" />
 
         <Button
-            android:id="@+id/button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:id="@+id/Addtocart"
+            android:layout_width="333dp"
+            android:layout_height="69dp"
+            android:layout_marginTop="25dp"
             android:backgroundTint="@color/black"
-            android:text="Proceed to Pay "
-            android:translationY="8dp"/>
+            android:text="Add to Cart "
+            android:translationX="50dp"
+            android:translationY="8dp" />
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/previousImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.039"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/previous" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

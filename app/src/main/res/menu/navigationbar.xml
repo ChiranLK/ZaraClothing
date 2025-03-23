@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nhome"
+        android:icon="@drawable/navihome"
+        android:title="" />
+    <item
+        android:id="@+id/nCart"
+        android:icon="@drawable/navicart"
+        android:title="" />
+    <item
+        android:id="@+id/npoints"
+        android:icon="@drawable/naviloyalpoints"
+        android:title="" />
+    <item
+        android:id="@+id/nuser"
+        android:icon="@drawable/naviuser"
+        android:title="" />
+</menu>
