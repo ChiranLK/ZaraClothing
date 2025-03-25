@@ -35,6 +35,8 @@
 
     <string name="quantityTextView">Quntity</string>
     <string name="totalPriceTextView">Total Price</string>
+    <string name="ShippingName">Enter full Name</string>
+
 
 
 

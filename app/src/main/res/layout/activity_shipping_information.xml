@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ShippingInformation"
-    android:background="@drawable/backgroundimg">
+    android:background="@drawable/figmabackground">
 
     <LinearLayout
         android:layout_width="409dp"
@@ -28,7 +28,7 @@
             app:srcCompat="@drawable/shippinginformation" />
 
         <EditText
-            android:id="@+id/editTextText"
+            android:id="@+id/ShippingName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
