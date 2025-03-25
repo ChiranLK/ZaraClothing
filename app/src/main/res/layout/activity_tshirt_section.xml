@@ -119,7 +119,8 @@
             android:layout_height="70dp"
             android:background="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:menu="@menu/navigationbar" />
+            app:menu="@menu/navigationbar"
+            android:translationY="-25dp"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

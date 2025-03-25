@@ -24,7 +24,7 @@
             android:layout_width="354dp"
             android:layout_height="49dp"
             android:layout_gravity="center"
-            android:translationY="80dp"
+            android:translationY="50dp"
             app:srcCompat="@drawable/shippinginformation" />
 
         <EditText
@@ -102,5 +102,13 @@
             android:textSize="25dp"
             android:backgroundTint="@color/black"
             android:text="Confirm Order" />
+
+        <ImageView
+            android:id="@+id/imageView20"
+            android:layout_width="257dp"
+            android:layout_height="145dp"
+            android:layout_gravity="center"
+            android:translationY="-560dp"
+            app:srcCompat="@drawable/delivery" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

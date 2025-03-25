@@ -105,7 +105,7 @@
             app:layout_constraintTop_toBottomOf="@+id/imageView6"
             app:layout_constraintVertical_bias="1.0"
             app:menu="@menu/navigationbar"
-            android:translationY="1dp"/>
+            android:translationY="-19dp"/>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

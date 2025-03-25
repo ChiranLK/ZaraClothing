@@ -57,8 +57,7 @@
             android:textSize="20sp"
             android:textStyle="bold"
             android:translationX="12dp"
-            android:translationY="-120dp"
-            android:background="@drawable/register_edit_text_bg"/>
+            android:translationY="-120dp" />
 
         <EditText
             android:id="@+id/loginSCUserName"
@@ -70,7 +69,7 @@
             android:textSize="20sp"
             android:translationX="12dp"
             android:translationY="-118dp"
-            />
+            android:background="@drawable/register_edit_text_bg" />
 
         <TextView
             android:id="@+id/textView4"
@@ -80,8 +79,7 @@
             android:textSize="20sp"
             android:textStyle="bold"
             android:translationX="12dp"
-            android:translationY="-95dp"
-            android:background="@drawable/register_edit_text_bg"/>
+            android:translationY="-95dp"/>
 
         <EditText
             android:id="@+id/loginSCPassword"
@@ -92,7 +90,8 @@
             android:inputType="textPassword"
             android:textSize="20sp"
             android:translationX="12dp"
-            android:translationY="-95dp"
+            android:translationY="-75dp"
+            android:background="@drawable/register_edit_text_bg"
             />
 
         <TextView

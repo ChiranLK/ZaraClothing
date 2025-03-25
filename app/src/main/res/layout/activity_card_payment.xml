@@ -136,8 +136,9 @@
 
         <Button
             android:id="@+id/paymentbutton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="333dp"
+            android:layout_height="69dp"
+            android:layout_gravity="center"
             android:translationY="470dp"
             android:backgroundTint="@color/black"
             android:text="Pay Now" />

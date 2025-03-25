@@ -23,6 +23,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:background="@drawable/register_edit_text_bg"
             android:text="YOUR  DAILY FASHION PARTNER"
             android:textColor="#0B0B0B"
             android:textSize="22sp"

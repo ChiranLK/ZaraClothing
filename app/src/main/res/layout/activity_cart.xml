@@ -14,6 +14,7 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -39,8 +40,9 @@
 
         <Button
             android:id="@+id/proceedtopay"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="333dp"
+            android:layout_height="69dp"
+            android:layout_gravity="center"
             android:backgroundTint="@color/black"
             android:text="Proceed to Pay"
             android:translationY="600dp" />
@@ -50,7 +52,7 @@
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:background="@color/white"
-            android:translationY="630dp"
+            android:translationY="660dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:menu="@menu/navigationbar" />
 
@@ -59,22 +61,25 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:translationY="-60dp"
+            android:background="@drawable/register_edit_text_bg"
             app:srcCompat="@drawable/orderhedding" />
 
         <ImageView
             android:id="@+id/imageView17"
             android:layout_width="128dp"
             android:layout_height="138dp"
-            app:srcCompat="@drawable/cartoversizet1"
-            android:translationY="-30dp"/>
+            android:translationY="-30dp"
+            android:background="@drawable/register_edit_text_bg"
+            app:srcCompat="@drawable/cartoversizet1" />
 
         <TextView
             android:id="@+id/quantityTextView"
-            android:layout_width="86dp"
+            android:layout_width="210dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text=""
+            android:translationX="60dp"
             android:textSize="20sp"
+            android:textStyle="bold"
             android:translationY="-90dp" />
 
         <TextView
@@ -83,18 +88,20 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="$35.00"
+            android:textStyle="bold"
             android:textSize="20sp"
             android:translationX="155dp"
-            android:translationY="-155dp"/>
+            android:translationY="-155dp" />
+
 
         <TextView
             android:id="@+id/totalPriceTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:textStyle="bold"
             android:text=""
             android:textSize="25sp"
+            android:textStyle="bold"
             android:translationY="70dp" />
 
         <TextView
@@ -104,6 +111,7 @@
             android:gravity="center"
             android:text="Over size"
             android:textSize="20sp"
+            android:textStyle="bold"
             android:translationY="-215dp" />
 
     </LinearLayout>

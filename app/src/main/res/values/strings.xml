@@ -5,11 +5,11 @@
     <string name="os2btn">Continue</string>
     <string name="loginSCsignup">Sign Up</string>
     <string name="loginSCsignin">Sign In</string>
-    <string name="registerSCsubmit">Submit &amp; Login</string>
-    <string name="registerSCpassword">Password</string>
-    <string name="registerSCemail">Email</string>
-    <string name="registerSClname">Last Name</string>
-    <string name="registerSCfname">First Name</string>
+    <string name="registersubmit">Submit &amp; Login</string>
+    <string name="registerpassword">Password</string>
+    <string name="registeremail">Email</string>
+    <string name="registerlname">Last Name</string>
+    <string name="registerfname">First Name</string>
     <string name="HomeWomenbutton">WOMEN</string>
     <string name="HomeMenbutton">MEN</string>
     <string name="im1">WOMES</string>
