@@ -5,35 +5,42 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
-import androidx.activity.enableEdgeToEdge
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class Cart : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_cart)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
-        val proceedtopay: Button = findViewById(R.id.proceedtopay)
 
-        proceedtopay.setOnClickListener {
+        // Retrieve the quantity and total price from intent
+        val quantity = intent.getIntExtra("quantity", 1)
+        val totalPrice = intent.getIntExtra("totalPrice", 35) // Updated default price
+
+        // Update UI
+        val totalPriceTextView: TextView = findViewById(R.id.totalPriceTextView)
+        val quantityTextView: TextView = findViewById(R.id.quantityTextView)
+
+        quantityTextView.text = "Quantity: $quantity"
+        totalPriceTextView.text = "Total: $$totalPrice"
+
+        // Proceed to payment button
+        val proceedToPay: Button = findViewById(R.id.proceedtopay)
+        proceedToPay.setOnClickListener {
             val intent = Intent(this, paymentMethodSC1::class.java)
             startActivity(intent)
         }
-        val previousImg: ImageView = findViewById(R.id.previousImg)
 
+        // Back button
+        val previousImg: ImageView = findViewById(R.id.previousImg)
         previousImg.setOnClickListener {
             val intent = Intent(this, checkoutScreen1::class.java)
             startActivity(intent)
         }
+
+        // Bottom Navigation Setup
         val navibar: BottomNavigationView = findViewById(R.id.navibar)
         navibar.setOnItemSelectedListener { item ->
             when (item.itemId) {
@@ -41,22 +48,18 @@ class Cart : AppCompatActivity() {
                     startActivity(Intent(this, LoyaltyPoints::class.java))
                     true
                 }
-
                 R.id.nuser -> {
                     startActivity(Intent(this, UserProfile::class.java))
                     true
                 }
-
                 R.id.nCart -> {
                     startActivity(Intent(this, Cart::class.java))
                     true
                 }
-
                 R.id.nhome -> {
                     startActivity(Intent(this, homeScreen1::class.java))
                     true
                 }
-
                 else -> false
             }
         }

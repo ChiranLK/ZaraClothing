@@ -133,15 +133,6 @@
             android:textSize="19dp"
             android:text="Agree with Terms and Conditions" />
 
-        <TextView
-            android:id="@+id/textView18"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:translationY="390dp"
-            android:textStyle="bold"
-            android:textSize="19dp"
-            android:gravity="center"
-            android:text="Total Cost" />
 
         <Button
             android:id="@+id/paymentbutton"
@@ -161,20 +152,12 @@
             android:textSize="19dp"
             android:text="Card Details" />
 
-        <TextView
-            android:id="@+id/textView20"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:translationY="345dp"
-            android:gravity="center"
-            android:textSize="20dp"
-            android:text="$70.00" />
 
         <ImageView
             android:id="@+id/previousImg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:translationY="-345dp"
+            android:translationY="-300dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.026"
             app:layout_constraintStart_toStartOf="parent"

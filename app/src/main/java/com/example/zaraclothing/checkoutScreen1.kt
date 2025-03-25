@@ -3,60 +3,43 @@ package com.example.zaraclothing
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
-import android.widget.AdapterView
-import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.ImageView
-import android.widget.RadioGroup
-import android.widget.Spinner
-import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import android.widget.NumberPicker
+import android.widget.RadioGroup
+import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
-
 
 class checkoutScreen1 : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_checkout_screen1)
-        // Size Selection
-        val sizeRadioGroup: RadioGroup = findViewById(R.id.sizeRadioGroup)
-        sizeRadioGroup.setOnCheckedChangeListener { _, checkedId ->
-            val selectedSize = when (checkedId) {
-                R.id.sizeSmall -> "Small"
-                R.id.sizeMedium -> "Medium"
-                R.id.sizeLarge -> "Large"
-                R.id.sizeXL -> "XL"
-                else -> ""
-            }
 
-            val quantityPicker: NumberPicker = findViewById(R.id.quantityPicker)
+        val quantityPicker: NumberPicker = findViewById(R.id.quantityPicker)
+        val addToCart: Button = findViewById(R.id.Addtocart)
 
-            // Set min and max values programmatically
-            quantityPicker.minValue = 1
-            quantityPicker.maxValue = 10
+        quantityPicker.minValue = 1
+        quantityPicker.maxValue = 10
+        quantityPicker.value = 1
 
-            // Optional: Set default value
-            quantityPicker.value = 1
-        }
-        val Addtocart: Button = findViewById(R.id.Addtocart)
+        addToCart.setOnClickListener {
+            val selectedQuantity = quantityPicker.value
+            val unitPrice = 35 // Updated price from XML
+            val totalPrice = selectedQuantity * unitPrice
 
-        Addtocart.setOnClickListener {
             val intent = Intent(this, Cart::class.java)
+            intent.putExtra("quantity", selectedQuantity)
+            intent.putExtra("totalPrice", totalPrice)
             startActivity(intent)
         }
-        val previousImg: ImageView = findViewById(R.id.previousImg)
 
+        val previousImg: ImageView = findViewById(R.id.previousImg)
         previousImg.setOnClickListener {
             val intent = Intent(this, TshirtSection::class.java)
             startActivity(intent)
         }
+
         val navibar: BottomNavigationView = findViewById(R.id.navibar)
         navibar.setOnItemSelectedListener { item ->
             when (item.itemId) {
@@ -64,22 +47,18 @@ class checkoutScreen1 : AppCompatActivity() {
                     startActivity(Intent(this, LoyaltyPoints::class.java))
                     true
                 }
-
                 R.id.nuser -> {
                     startActivity(Intent(this, UserProfile::class.java))
                     true
                 }
-
                 R.id.nCart -> {
                     startActivity(Intent(this, Cart::class.java))
                     true
                 }
-
                 R.id.nhome -> {
                     startActivity(Intent(this, homeScreen1::class.java))
                     true
                 }
-
                 else -> false
             }
         }

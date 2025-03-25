@@ -33,4 +33,12 @@
     <string name="navibar">Navigation Bar</string>
     <string name="previousImg">Previous</string>
 
+    <string name="quantityTextView">Quntity</string>
+    <string name="totalPriceTextView">Total Price</string>
+
+
+
+
+
+
 </resources>
