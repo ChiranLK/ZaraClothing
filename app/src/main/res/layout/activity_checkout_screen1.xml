@@ -152,7 +152,7 @@
             android:backgroundTint="@color/black"
             android:text="Add to Cart "
             android:translationX="50dp"
-            android:translationY="8dp" />
+            android:translationY="-2dp" />
     </LinearLayout>
 
     <ImageView
@@ -165,5 +165,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/previous" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navibar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:translationY="-5dp"
+        android:background="@color/white"
+        app:menu="@menu/navigationbar"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

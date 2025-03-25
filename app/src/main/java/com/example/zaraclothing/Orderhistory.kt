@@ -3,7 +3,6 @@ package com.example.zaraclothing
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
 import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -11,27 +10,21 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-class Cart : AppCompatActivity() {
+class Orderhistory : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_cart)
+        setContentView(R.layout.activity_orderhistory)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val proceedtopay: Button = findViewById(R.id.proceedtopay)
+        val orderPrevious: ImageView =  findViewById(R.id.orderPrevious)
 
-        proceedtopay.setOnClickListener {
-            val intent = Intent(this, paymentMethodSC1::class.java)
-            startActivity(intent)
-        }
-        val previousImg: ImageView = findViewById(R.id.previousImg)
-
-        previousImg.setOnClickListener {
-            val intent = Intent(this, checkoutScreen1::class.java)
+        orderPrevious.setOnClickListener {
+            val intent = Intent(this, UserProfile::class.java)
             startActivity(intent)
         }
         val navibar: BottomNavigationView = findViewById(R.id.navibar)

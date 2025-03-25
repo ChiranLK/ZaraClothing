@@ -21,9 +21,10 @@
 
         <ImageView
             android:id="@+id/imageView14"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="354dp"
+            android:layout_height="49dp"
             android:translationY="89dp"
+           android:layout_gravity="center"
             app:srcCompat="@drawable/creditdebitcard" />
 
         <TextView
@@ -98,7 +99,7 @@
             android:textColorHint="@color/black"
             android:textStyle="bold"
             android:hint="Card Number"
-            android:background="@drawable/edit_text_bg"/>
+            android:background="@drawable/register_edit_text_bg"/>
 
         <EditText
             android:id="@+id/CardYear"
@@ -110,7 +111,7 @@
             android:textStyle="bold"
             android:textColorHint="@color/black"
             android:hint="Expire Year/Month"
-            android:background="@drawable/edit_text_bg"/>
+            android:background="@drawable/register_edit_text_bg"/>
 
         <EditText
             android:id="@+id/CardSecurity"
@@ -122,7 +123,7 @@
             android:textStyle="bold"
             android:hint="Security Code"
             android:textColorHint="@color/black"
-            android:background="@drawable/edit_text_bg"/>
+            android:background="@drawable/register_edit_text_bg"/>
 
         <CheckBox
             android:id="@+id/checkBox2"
@@ -146,7 +147,7 @@
             android:id="@+id/paymentbutton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:translationY="490dp"
+            android:translationY="470dp"
             android:backgroundTint="@color/black"
             android:text="Pay Now" />
 
@@ -183,4 +184,13 @@
 
 
     </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navibar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:translationY="18dp"
+        android:background="@color/white"
+        app:menu="@menu/navigationbar"
+        app:layout_constraintBottom_toBottomOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

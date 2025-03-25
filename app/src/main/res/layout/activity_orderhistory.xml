@@ -5,8 +5,11 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Cart"
+    tools:context=".Orderhistory"
     android:background="@drawable/backgroundimg">
+
+
+
 
     <LinearLayout
         android:layout_width="409dp"
@@ -18,46 +21,44 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.5">
+
         <ImageView
-            android:id="@+id/previousImg"
+            android:id="@+id/orderPrevious"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/previous"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:translationY="30dp"
+            android:translationX="-155dp"  />
+
+
+        <TextView
+            android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="48dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.039"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/previous" />
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:text="My Orders"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+
 
         <ImageView
-            android:id="@+id/imageView10"
-            android:layout_width="355dp"
-            android:layout_height="wrap_content"
-            android:translationY="10dp"
-            app:srcCompat="@drawable/cart"
-            android:layout_gravity="center"
-            />
-
-        <ImageView
-            android:id="@+id/imageView13"
+            android:id="@+id/imageButton"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:translationY="100dp"
-            app:srcCompat="@drawable/cartimages" />
-
-        <Button
-            android:id="@+id/proceedtopay"
-            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/black"
-            android:text="Proceed to Pay"
-            android:translationY="180dp" />
+            app:srcCompat="@drawable/carthistory" />
+
+
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/navibar"
             android:layout_width="match_parent"
             android:layout_height="70dp"
-            android:translationY="190dp"
+            android:translationY="370dp"
             android:background="@color/white"
             app:menu="@menu/navigationbar"
             app:layout_constraintBottom_toBottomOf="parent" />

@@ -19,8 +19,8 @@
 
         <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="354dp"
+            android:layout_height="49dp"
             android:translationY="-20dp"
             app:layout_constraintBottom_toTopOf="@+id/imageView4"
             app:layout_constraintEnd_toEndOf="parent"
@@ -100,11 +100,12 @@
             android:layout_marginBottom="40dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.142"
+            app:layout_constraintHorizontal_bias="0.178"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView6"
             app:layout_constraintVertical_bias="1.0"
-            app:menu="@menu/navigationbar" />
+            app:menu="@menu/navigationbar"
+            android:translationY="1dp"/>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

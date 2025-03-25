@@ -26,6 +26,7 @@
             android:layout_height="49dp"
             android:translationX="25dp"
             android:translationY="100dp"
+            android:layout_gravity="center"
             app:srcCompat="@drawable/paymentmethod" />
 
         <ImageView

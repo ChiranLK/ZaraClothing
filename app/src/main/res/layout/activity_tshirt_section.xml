@@ -93,7 +93,7 @@
                     android:layout_height="wrap_content"
                     android:src="@drawable/sleeveless"
                     android:translationX="92dp"
-                    android:translationY="-740dp" />
+                    android:translationY="-747dp" />
             </LinearLayout> <!-- END of parent LinearLayout -->
 
         </ScrollView>
@@ -110,6 +110,16 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.787"
             app:srcCompat="@drawable/previous" />
+
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/navibar"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:menu="@menu/navigationbar" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

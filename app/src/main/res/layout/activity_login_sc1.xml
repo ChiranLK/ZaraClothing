@@ -58,7 +58,7 @@
             android:textStyle="bold"
             android:translationX="12dp"
             android:translationY="-120dp"
-            android:background="@drawable/edit_text_bg"/>
+            android:background="@drawable/register_edit_text_bg"/>
 
         <EditText
             android:id="@+id/loginSCUserName"
@@ -81,7 +81,7 @@
             android:textStyle="bold"
             android:translationX="12dp"
             android:translationY="-95dp"
-            android:background="@drawable/edit_text_bg"/>
+            android:background="@drawable/register_edit_text_bg"/>
 
         <EditText
             android:id="@+id/loginSCPassword"

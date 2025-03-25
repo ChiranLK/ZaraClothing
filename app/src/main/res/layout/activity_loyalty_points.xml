@@ -5,6 +5,81 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/backgroundimg"
     tools:context=".LoyaltyPoints">
 
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="921dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/register_edit_text_bg"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="Zara Rewards "
+            android:textSize="30dp"
+            android:translationX="30dp"
+            android:translationY="90dp" />
+
+        <ImageView
+            android:id="@+id/rewarddimg"
+            android:layout_width="177dp"
+            android:layout_height="168dp"
+            android:translationX="120dp"
+            android:translationY="150dp"
+            app:srcCompat="@drawable/point" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_bg"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="Z - Points "
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:translationY="200dp" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edithrewardspage"
+            android:gravity="center"
+            android:text="You have 2569 Points "
+            android:textSize="30dp"
+            android:translationY="260dp" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edithrewardspage"
+            android:gravity="center"
+            android:text="Available Points 2530 "
+            android:textSize="30dp"
+            android:translationY="300dp" />
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/navibar"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:translationY="485dp"
+            android:background="@color/white"
+            app:menu="@menu/navigationbar"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
