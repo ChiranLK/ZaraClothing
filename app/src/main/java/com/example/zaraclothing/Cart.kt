@@ -24,7 +24,7 @@ class Cart : AppCompatActivity() {
         val quantityTextView: TextView = findViewById(R.id.quantityTextView)
 
         quantityTextView.text = "Quantity: $quantity"
-        totalPriceTextView.text = "Total: $$totalPrice"
+        totalPriceTextView.text = "Total: LKR$totalPrice"
 
         // Proceed to payment button
         val proceedToPay: Button = findViewById(R.id.proceedtopay)

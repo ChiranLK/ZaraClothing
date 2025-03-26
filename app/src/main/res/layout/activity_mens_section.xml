@@ -32,28 +32,28 @@
 
         <ImageView
             android:id="@+id/imageView4"
-            android:layout_width="174dp"
-            android:layout_height="230dp"
+            android:layout_width="177dp"
+            android:layout_height="249dp"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/imageView5"
-            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_bias="0.297"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.269"
+            app:layout_constraintVertical_bias="0.296"
             app:srcCompat="@drawable/denims" />
 
         <ImageView
             android:id="@+id/imageView5"
             android:layout_width="171dp"
-            android:layout_height="231dp"
-            android:layout_marginTop="96dp"
-            android:translationY="-60dp"
+            android:layout_height="263dp"
+            android:translationY="-70dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintHorizontal_bias="0.93"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.255"
+            app:layout_constraintVertical_bias="0.387"
             app:srcCompat="@drawable/hoodies" />
 
         <ImageView
@@ -61,24 +61,24 @@
             android:layout_width="176dp"
             android:layout_height="259dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/tshirtimage"
-            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.068"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView4"
-            app:layout_constraintVertical_bias="0.459"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.771"
             app:srcCompat="@drawable/shorts" />
 
         <ImageView
             android:id="@+id/tshirtimage"
-            android:layout_width="176dp"
-            android:layout_height="259dp"
+            android:layout_width="179dp"
+            android:layout_height="258dp"
             android:translationY="-30dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/imageView6"
-            app:layout_constraintTop_toBottomOf="@+id/imageView5"
-            app:layout_constraintVertical_bias="0.438"
+            app:layout_constraintHorizontal_bias="0.93"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.815"
             app:srcCompat="@drawable/tshirt" />
 
         <ImageView
@@ -98,14 +98,14 @@
             android:layout_width="437dp"
             android:layout_height="70dp"
             android:layout_marginBottom="40dp"
+            android:translationY="-19dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.178"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView6"
             app:layout_constraintVertical_bias="1.0"
-            app:menu="@menu/navigationbar"
-            android:translationY="-19dp"/>
+            app:menu="@menu/navigationbar" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
